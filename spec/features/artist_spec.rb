@@ -1,7 +1,9 @@
 require 'rails_helper'
+require 'pry'
 
 describe 'navigate artist pages' do
   before do
+    binding.pry
     @artist = Artist.create(name: "My Artist", bio: "My artist bio")
   end
 

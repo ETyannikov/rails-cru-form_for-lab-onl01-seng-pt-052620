@@ -3,8 +3,8 @@ require 'pry'
 
 describe 'navigate artist pages' do
   before do
-    @artist = Artist.create(name: "My Artist", bio: "My artist bio")
     binding.pry
+    @artist = Artist.create(name: "My Artist", bio: "My artist bio")
   end
 
   it 'shows the name on the show page in a h1 tag' do
